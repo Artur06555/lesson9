@@ -4,6 +4,5 @@ public enum Model {
     TOYOTA,
     MITSYBISHI,
     DOUBLEDECKER,
-    FIGHTER,
 
 }

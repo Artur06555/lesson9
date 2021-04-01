@@ -1,6 +1,8 @@
 package com.company;
 
-public final class Bus extends Transport {
+public final class Bus extends Car {
+
+
 
     private int numberOfSeats;
     private String production;
@@ -14,23 +16,13 @@ public final class Bus extends Transport {
         return production;
     }
 
-    public Bus(int volume, String production, int numberOfSeats, String model, Underground underground) {
-        super(model, volume, underground);
-        this.numberOfSeats = numberOfSeats;
-        this.production=production;
-    }
-
-    public Bus(String model, int volume, Underground underground, int numberOfSeats, String production) {
-        super(model, volume, underground);
+    public Bus(Model model, int volume,Underground underground, String production,int numberOfSeats) {
+        super(model, volume, underground,production);
         this.numberOfSeats = numberOfSeats;
         this.production = production;
-    }
-
-    public  Bus(int volume, String model, Underground underground, String production) {
-        super(model, volume, underground);
-        this.production = production;
 
     }
+
 
     @Override
     public String getInfo() {

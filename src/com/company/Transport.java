@@ -1,33 +1,22 @@
 package com.company;
 
 public class Transport {
-    private String model;
+    private Model model;
     private int volume;
     private Underground underground;
 
-    public Transport(String model, int volume, Underground underground) {
+    public Transport(Model model, int volume, Underground underground) {
         this.underground = underground;
         this.volume = volume;
         this.model = model;
     }
 
-    public String Transport(int volume, String model, int underground, String production) {
-        return getModel();
-    }
-
-
-    public String getModel() {
-        return model;
+    public Model getModel() {
+        return model.DOUBLEDECKER;
     }
 
     public int getVolume() {
         return volume;
-    }
-
-    public void transport(String model, int volume, Underground underground) {
-        this.model = model;
-        this.volume = volume;
-        this.underground = underground;
     }
 
     public Underground getUnderground() {
